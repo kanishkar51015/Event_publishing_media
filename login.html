@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="formbox">
+      <div class="buttonbox">
+        <div id="btn"></div> 
+        <button type="button" class="togglebtn" onclick="Login()">Login</button>
+        <button type="button" class="togglebtn" onclick="Signup()">Signup</button>
+      </div>
+      <div class="socialicons">
+        <img src="https://image.flaticon.com/icons/svg/124/124010.svg" alt="">
+        <img src="https://image.flaticon.com/icons/svg/2702/2702602.svg" alt="">
+      </div>
+      <form id="Login" class="inputgroup">
+        <input type="text" class="inputfield" placeholder="User Id" required>
+        <input type="text" class="inputfield" placeholder="Password" required>
+        <input type="checkbox" class="checkbox"><span>Forget Password</span>
+        <button type="submit" class="submitbtn">Login</button>
+      </form>
+      <form id="Signup" class="inputgroup">
+        <input type="text" class="inputfield" placeholder="User Id" required>
+        <input type="email" class="inputfield" placeholder="Email Id" required>
+        <input type="text" class="inputfield" placeholder="Password" required>
+        <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+        <button type="submit" class="submitbtn">Signup</button>
+      </form>
+    </div>
+    
+  </div>
+  <script>
+    var x = document.getElementById("Login");
+    var y = document.getElementById("Signup");
+    var z = document.getElementById("btn");
+    
+    function Signup(){
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+      }
+
+      function Login(){
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0px";
+      }
+  </script>
+</body>
+</html>
